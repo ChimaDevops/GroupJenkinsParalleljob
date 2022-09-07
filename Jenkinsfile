@@ -5,6 +5,7 @@ pipeline{
 			parallel{
 				stage('sub-job1'){
 					steps{
+						checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-id', url: 'https://github.com/ChimaDevops/GroupJenkinsParalleljob.git']]])
 						echo "sub-job1 tasks and commands and actions"
 					}
 				}
