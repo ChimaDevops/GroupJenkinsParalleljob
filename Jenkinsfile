@@ -57,7 +57,7 @@ pipeline{
 				}
 			}
 		}
-		stage('version-check'){
+		stage('status check1'){
 			steps{
 				echo "end of parallel job"
 			}
