@@ -12,6 +12,7 @@ pipeline{
 				stage('sub-job2'){
 					steps{
 						echo "sub-job2 tasks and commands and actions"
+						sh './https://github.com/ChimaDevops/GroupJenkinsParalleljob/blob/main/chima.sh'
 					}
 				}
 			}
